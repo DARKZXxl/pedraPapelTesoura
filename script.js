@@ -1,4 +1,4 @@
-const maos = ['pedra', 'papel', 'tesoura']
+const maos = ['pedra', 'papel', 'tesoura','pedra','tesoura', 'papel', 'tesoura', 'pedra', 'papel', 'tesoura', 'papel', 'pedra', 'papel', 'tesoura', 'pedra', 'papel', 'pedra', 'tesoura']
 const p = document.querySelector('section p')
 const tesoura = document.getElementById('tesoura')
 const papel = document.getElementById('papel')
@@ -13,8 +13,9 @@ let bot = 1
 pedra.addEventListener('click', function (ev) {
     ev.preventDefault()
     const numberFloat = Math.random()
-    const primario = numberFloat * 3
+    const primario = numberFloat * 9
     const numeroRedondo = Math.trunc(primario)
+    maos.reverse()
 
     if(maos[numeroRedondo] === 'pedra') {
         p.innerText = 'empate'
@@ -47,8 +48,10 @@ pedra.addEventListener('click', function (ev) {
 papel.addEventListener('click', function (ev) {
     ev.preventDefault()
     const numberFloat = Math.random()
-    const primario = numberFloat * 3
+    const primario = numberFloat * 9
     const numeroRedondo = Math.trunc(primario)
+    maos.reverse()
+
     
     if(maos[numeroRedondo] === 'tesoura') {
         p.innerText = 'perdeu'
@@ -80,8 +83,10 @@ papel.addEventListener('click', function (ev) {
 tesoura.addEventListener('click', function (ev) {
     ev.preventDefault()
     const numberFloat = Math.random()
-    const primario = numberFloat * 3
+    const primario = numberFloat * 9
     const numeroRedondo = Math.trunc(primario)
+    maos.reverse()
+
     
     if(maos[numeroRedondo] === 'tesoura') {
         p.innerText = 'empate'

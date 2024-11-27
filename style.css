@@ -13,7 +13,7 @@ section {
     background-color: rgb(255, 255, 255);
     border-radius: 5px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.151);
-    width: 40vw;
+    width: 71vw;
 }
 
 #linha {
@@ -25,7 +25,7 @@ section {
 }
 img {
     display: inline; 
-    width: 12.9vw; 
+    width: 22.7vw; 
 }
 
 img:hover {
